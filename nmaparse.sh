@@ -33,7 +33,7 @@ cat $1 | grep 80 | grep Host | awk '{print $2}' | sort -t. -n -k1,1 -k2,2 -k3,3 
 cat $1 | grep 443 | grep Host | awk '{print $2}' | sort -t. -n -k1,1 -k2,2 -k3,3 -k4,4 | tee -a input_lists/443.il
 cat $1 | grep 8000 | grep Host | awk '{print $2}' | sort -t. -n -k1,1 -k2,2 -k3,3 -k4,4 | tee -a input_lists/8000.il
 cat $1 | grep 8080 | grep Host | awk '{print $2}' | sort -t. -n -k1,1 -k2,2 -k3,3 -k4,4 | tee -a input_lists/8080.il
-cat $1 | grep 8081 | grep Host | awk '{print $2}' | sort -t. -n -k1,1 -k2,2 -k3,3 -k4,4 | tee -a input_lists/808l.il
+cat $1 | grep 8081 | grep Host | awk '{print $2}' | sort -t. -n -k1,1 -k2,2 -k3,3 -k4,4 | tee -a input_lists/8081.il
 cat $1 | grep 8443 | grep Host | awk '{print $2}' | sort -t. -n -k1,1 -k2,2 -k3,3 -k4,4 | tee -a input_lists/8443.il
 cat $1 | grep 8843 | grep Host | awk '{print $2}' | sort -t. -n -k1,1 -k2,2 -k3,3 -k4,4 | tee -a input_lists/8843.il
 cat $1 | grep 8834 | grep Host | awk '{print $2}' | sort -t. -n -k1,1 -k2,2 -k3,3 -k4,4 | tee -a input_lists/8834.il
